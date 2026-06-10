@@ -14,11 +14,15 @@ export async function generateMetadata(): Promise<Metadata> {
   const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
 
   return {
+    metadataBase: config.site.url ? new URL(config.site.url) : undefined,
     title: {
       default: config.site.title,
       template: `%s | ${config.site.title}`,
     },
     description: config.site.description,
+    alternates: config.site.url ? {
+      canonical: '/',
+    } : undefined,
     keywords: [config.author.name, 'PhD', 'Research', config.author.institution],
     authors: [{ name: config.author.name }],
     creator: config.author.name,
@@ -28,6 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     openGraph: {
       type: 'website',
+      url: config.site.url,
       locale: openGraphLocale,
       title: config.site.title,
       description: config.site.description,

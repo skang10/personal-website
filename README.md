@@ -1,6 +1,6 @@
 # Xuemei Jiang — Personal Website
 
-Personal website of Xuemei Jiang. Live at **[simonejiang7.github.io](https://simonejiang7.github.io)**.
+Personal website of Xuemei Jiang. Live at **[xuemei-jiang.com](https://xuemei-jiang.com)**.
 
 Built with [PRISM](https://github.com/xyjoey/PRISM) — a Next.js personal website template.
 

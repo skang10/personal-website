@@ -21,7 +21,8 @@ export interface LocaleMessages {
     googleMap: string;
     send: string;
     sendEmail: string;
-    researchInterests: string;
+    interests: string;
+    skills: string;
     like: string;
     liked: string;
     thanks: string;
@@ -71,7 +72,8 @@ const en: LocaleMessages = {
     googleMap: 'Google Map',
     send: 'Send',
     sendEmail: 'Send Email',
-    researchInterests: 'Research Interests',
+    interests: 'Interests',
+    skills: 'Skills',
     like: 'Like',
     liked: 'Liked',
     thanks: 'Thanks!',
@@ -121,7 +123,8 @@ const zh: LocaleMessages = {
     googleMap: '谷歌地图',
     send: '发送',
     sendEmail: '发送邮件',
-    researchInterests: '研究兴趣',
+    interests: '兴趣',
+    skills: '技能',
     like: '点赞',
     liked: '已点赞',
     thanks: '感谢支持！',
