@@ -8,7 +8,7 @@
 
 ## Experience
 
-**AI Developer** — [Everest Systems](https://everest-systems.com/), Heidelberg, Germany · *Dec 2025 – May 2026*
+**AI Engineer** — [Everest Systems](https://everest-systems.com/), Heidelberg, Germany · *Dec 2025 – May 2026*
 - AI Agents · Automated Testing · Multi-agent Systems
 
 **Machine Learning Engineer** — [WIPO (UN)](https://www.wipo.int), Geneva, Switzerland · *Aug 2024 – Nov 2025*
