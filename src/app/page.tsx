@@ -13,7 +13,12 @@ interface SkillCategory {
 
 interface TimelineEntry {
   period: string;
-  content: string;
+  content?: string;
+  category?: 'work' | 'education';
+  title?: string;
+  org?: string;
+  chips?: string[];
+  detail?: string;
 }
 
 interface SectionConfig {

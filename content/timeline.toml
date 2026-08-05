@@ -1,30 +1,80 @@
+# Timeline — Option A (structured rows with hover-reveal detail)
+#
+# Fields per entry:
+#   category = "work" | "education"   -> controls colour + icon
+#   title    = role or degree         -> the bold heading
+#   org      = institution · place
+#   period   = short date range shown on the left rail
+#   chips    = ["skill", ...]         -> small tags under the heading (optional)
+#   detail   = """..."""              -> reflection shown on hover / focus / tap (markdown, optional)
+#
+# Rows without a `detail` simply don't expand. Two intern rows are left blank
+# on purpose — add a short blurb if you want them to expand too.
+
+# ---------- Work ----------
+
 [[entries]]
-period = "2025"
-content = """I moved to **Heidelberg, Germany** for a new professional chapter. This period helped me understand more clearly \
+category = "work"
+title = "AI Engineer"
+org = "Everest Systems · Heidelberg"
+period = "Dec 2025 – May 2026"
+chips = ["AI Agents", "Automated Testing", "Multi-agent Systems"]
+detail = """I moved to **Heidelberg, Germany** for a new professional chapter. This period helped me understand more clearly \
 what I want next. With stronger software engineering experience as a foundation, I enjoy the process of bringing my \
 own ideas into a domain where machine learning can solve real problems."""
 
 [[entries]]
-period = "2024 to 2025"
-content = """In spring 2024, I moved to **Geneva, Switzerland** to work as a **Machine Learning Engineer** at WIPO, United Nations. \
+category = "work"
+title = "Machine Learning Engineer"
+org = "WIPO (UN) · Geneva"
+period = "Aug 2024 – Nov 2025"
+chips = ["Image Embedding", "Distributed Training", "Multi-view Retrieval", "Patent Search"]
+detail = """In spring 2024, I moved to **Geneva, Switzerland** to work as a **Machine Learning Engineer** at WIPO, United Nations. \
 After several years in St. Gallen, Geneva felt like a fresh start. I met new people through work and life, \
 learned how an international organization operates, and enjoyed the process of applying my ML knowledge to the IP domain."""
 
 [[entries]]
-period = "2021 to 2023"
-content = """During these years, I changed my direction from **Finance to Computer Science**. I passed CS entrance exam, \
+category = "work"
+title = "Machine Learning Engineer Intern"
+org = "WIPO (UN) · Geneva"
+period = "Feb 2024 – Aug 2024"
+chips = ["Vector Search", "Milvus", "RAG", "LLM Fine-tuning"]
+# detail = """..."""  # add a short reflection here if you want this row to expand
+
+[[entries]]
+category = "work"
+title = "Machine Learning Engineer Intern"
+org = "VIUN · Zurich"
+period = "Oct 2023 – Feb 2024"
+chips = ["Visual Defect Detection", "ML Pipeline", "Active Learning"]
+# detail = """..."""  # add a short reflection here if you want this row to expand
+
+# ---------- Education ----------
+
+[[entries]]
+category = "education"
+title = "MSc Computer Science"
+org = "University of St.Gallen"
+period = "2021 – 2025"
+detail = """During these years, I changed my direction from **Finance to Computer Science**. I passed CS entrance exam, \
 took CS courses, worked through many experiments for my master thesis, and had my first ML engineering internship in Zurich. \
 It was not an easy transition, but it was the period when I slowly proved to myself that I could build a new path."""
 
 [[entries]]
-period = "2018 to 2020"
-content = """I moved to **St. Gallen, Switzerland** for my studies at HSG. It became the place where I spent the most time \
+category = "education"
+title = "MA Banking and Finance"
+org = "University of St.Gallen"
+period = "2018 – 2021"
+detail = """I moved to **St. Gallen, Switzerland** for my studies at HSG. It became the place where I spent the most time \
 outside my hometown. I studied, made friends, became more independent, and started to see Europe not only as a place \
 on the map, but as part of my own life."""
 
 [[entries]]
-period = "2013 to 2018"
-content = """I studied Economics at Yuanpei College, **Peking University**. After graduation, I spent one year contributing \
+category = "education"
+title = "BA Economics"
+org = "Peking University"
+period = "2013 – 2017"
+detail = """I studied Economics at Yuanpei College, **Peking University**. After graduation, I spent one year contributing \
 to two research projects at Tsinghua University, focusing on insurtech and fintech. \
 This was where I learned how to become a professional, research an industry, ask clearer questions, and turn unclear \
 information into structured thinking."""
