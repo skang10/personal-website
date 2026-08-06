@@ -8,8 +8,7 @@
 #   chips    = ["skill", ...]         -> small tags under the heading (optional)
 #   detail   = """..."""              -> reflection shown on hover / focus / tap (markdown, optional)
 #
-# Rows without a `detail` simply don't expand. Two intern rows are left blank
-# on purpose — add a short blurb if you want them to expand too.
+# Rows without a `detail` simply don't expand.
 
 # ---------- Work ----------
 
@@ -39,7 +38,9 @@ title = "Machine Learning Engineer Intern"
 org = "WIPO (UN) · Geneva"
 period = "Feb 2024 – Aug 2024"
 chips = ["Vector Search", "Milvus", "RAG", "LLM Fine-tuning"]
-# detail = """..."""  # add a short reflection here if you want this row to expand
+detail = """This was my **first professional experience in NLP**. I got hands-on with vector search benchmarking, \
+RAG evaluation, and LLM evaluation tasks, and it gave me the practical grounding that shaped the ML engineer \
+I later became at WIPO."""
 
 [[entries]]
 category = "work"
@@ -47,7 +48,8 @@ title = "Machine Learning Engineer Intern"
 org = "VIUN · Zurich"
 period = "Oct 2023 – Feb 2024"
 chips = ["Visual Defect Detection", "ML Pipeline", "Active Learning"]
-# detail = """..."""  # add a short reflection here if you want this row to expand
+detail = """This was my **first ML professional experience**. Working alongside a structured team in Zurich, I learned \
+how to build an ML product end to end, from data to deployment, a foundation I carried into every role since."""
 
 # ---------- Education ----------
 
