@@ -9,8 +9,9 @@
 #   detail   = """..."""              -> reflection shown on hover / focus / tap (markdown, optional)
 #
 # Rows without a `detail` simply don't expand.
-
-# ---------- Work ----------
+#
+# Entries render in file order (no sorting in TimelineSection) — keep this list
+# sorted by start date, most recent first.
 
 [[entries]]
 category = "work"
@@ -51,8 +52,6 @@ chips = ["Visual Defect Detection", "ML Pipeline", "Active Learning"]
 detail = """This was my **first ML professional experience**. Working alongside a structured team in Zurich, I learned \
 how to build an ML product end to end, from data to deployment, a foundation I carried into every role since."""
 
-# ---------- Education ----------
-
 [[entries]]
 category = "education"
 title = "MSc Computer Science"
@@ -61,6 +60,16 @@ period = "2021 – 2025"
 detail = """During these years, I changed my direction from **Finance to Computer Science**. I passed CS entrance exam, \
 took CS courses, worked through many experiments for my master thesis, and had my first ML engineering internship in Zurich. \
 It was not an easy transition, but it was the period when I slowly proved to myself that I could build a new path."""
+
+[[entries]]
+category = "work"
+title = "Strategy & Business Development Intern"
+org = "Decentriq · Zurich"
+period = "Oct 2019 – Jan 2020"
+chips = ["Privacy-Preserving Computing", "Market Research", "Strategy"]
+detail = """This was my **first work experience in Europe**. Every week I discussed my findings with the C-level team, \
+watching how the engineering and business sides moved together and learning the Swiss market along the way. \
+It also gave me my first impression of privacy-preserving computing, one of the motivations that later drew me into tech."""
 
 [[entries]]
 category = "education"
@@ -72,11 +81,30 @@ outside my hometown. I studied, made friends, became more independent, and start
 on the map, but as part of my own life."""
 
 [[entries]]
+category = "work"
+title = "Research Analyst Intern"
+org = "Tsinghua University · Beijing"
+period = "Sep 2017 – Jun 2018"
+chips = ["Insurtech", "Fintech", "Industry Research"]
+detail = """After graduating from PKU, I spent a year contributing to two research projects at **Tsinghua University**, \
+focusing on insurtech and fintech. This was where I learned how to become a professional: research an industry, \
+ask clearer questions, and turn unclear information into structured thinking."""
+
+[[entries]]
+category = "work"
+title = "IT Consulting Intern"
+org = "SAP · Beijing"
+period = "Sep 2016 – Feb 2017"
+chips = ["IT Consulting", "Insurance", "Actuarial Algorithms"]
+detail = """My **first internship** was at a German company, which later became one of the reasons I decided to move \
+to Switzerland. As an IT consulting intern, I brought my domain knowledge to the engineering team, helping them \
+build a product for a client insurance company."""
+
+[[entries]]
 category = "education"
 title = "BA Economics"
 org = "Peking University"
 period = "2013 – 2017"
-detail = """I studied Economics at Yuanpei College, **Peking University**. After graduation, I spent one year contributing \
-to two research projects at Tsinghua University, focusing on insurtech and fintech. \
-This was where I learned how to become a professional, research an industry, ask clearer questions, and turn unclear \
-information into structured thinking."""
+detail = """I studied Economics at **Yuanpei College, Peking University**, where students freely choose what to study. \
+I went for economics, but the friends I made came from law, mathematics, physics, and literature. \
+Those years taught me not to be afraid of change, and to hold on to the freedom to choose my own path."""
