@@ -21,9 +21,17 @@ interface TimelineEntry {
   detail?: string;
 }
 
+interface ProjectEntry {
+  name: string;
+  description: string;
+  chips?: string[];
+  github?: string;
+  demo?: string;
+}
+
 interface SectionConfig {
   id: string;
-  type: 'markdown' | 'publications' | 'list' | 'skills' | 'timeline';
+  type: 'markdown' | 'publications' | 'list' | 'skills' | 'timeline' | 'projects';
   title?: string;
   source?: string;
   filter?: string;
@@ -33,6 +41,7 @@ interface SectionConfig {
   items?: NewsItem[];
   categories?: SkillCategory[];
   entries?: TimelineEntry[];
+  projects?: ProjectEntry[];
 }
 
 interface NewsItem {
@@ -84,6 +93,13 @@ function processSections(sections: SectionConfig[], locale?: string): SectionCon
         return {
           ...section,
           entries: timelineData?.entries || [],
+        };
+      }
+      case 'projects': {
+        const projectsData = section.source ? getTomlContent<{ projects: ProjectEntry[] }>(section.source, locale) : null;
+        return {
+          ...section,
+          projects: projectsData?.projects || [],
         };
       }
       default:

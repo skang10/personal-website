@@ -1,1 +1,20 @@
-# Placeholder — not linked in navigation yet
+# Projects — rendered as full-width rows on the homepage
+#
+# Fields per project:
+#   name        = project name (bold heading)
+#   description = 1–2 sentence summary
+#   chips       = ["tech", ...]  -> small tags under the description (optional)
+#   github      = repo URL (optional)
+#   demo        = live demo URL (optional)
+
+[[projects]]
+name = "Battery Charge Explorer"
+description = "Battery charge estimation from pressure sensor data, with live ONNX inference in the browser."
+chips = ["PyTorch", "ONNX", "React", "Time-series"]
+github = "https://github.com/skang10/battery-sense"
+
+[[projects]]
+name = "P2J Daybook"
+description = "A local-first desktop daybook that turns daily check-ins into monthly progress."
+chips = ["Rust", "Tauri 2", "Local-first"]
+github = "https://github.com/skang10/p2j"

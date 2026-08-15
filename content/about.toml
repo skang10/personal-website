@@ -24,6 +24,12 @@ source = "bio.md"
 title = "About"
 
 [[sections]]
+id = "projects"
+type = "projects"
+source = "projects.toml"
+title = "Projects"
+
+[[sections]]
 id = "timeline"
 type = "timeline"
 source = "timeline.toml"
