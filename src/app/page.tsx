@@ -23,6 +23,8 @@ interface TimelineEntry {
 
 interface ProjectEntry {
   name: string;
+  icon?: string;
+  emoji?: string;
   description: string;
   chips?: string[];
   github?: string;

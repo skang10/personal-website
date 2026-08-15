@@ -1,20 +1,24 @@
-# Projects — rendered as full-width rows on the homepage
+# Projects — rendered as a card grid on the homepage
 #
 # Fields per project:
 #   name        = project name (bold heading)
-#   description = 1–2 sentence summary
+#   icon        = stroke icon left of the name: "battery" | "star" | "compass" | "spark" (optional)
+#   emoji       = literal emoji instead of an icon; only used when `icon` is unset (optional)
+#   description = one-sentence summary (cards stay light; detail lives in the README)
 #   chips       = ["tech", ...]  -> small tags under the description (optional)
 #   github      = repo URL (optional)
 #   demo        = live demo URL (optional)
 
 [[projects]]
 name = "Battery Charge Explorer"
+icon = "battery"
 description = "Battery charge estimation from pressure sensor data, with live ONNX inference in the browser."
 chips = ["PyTorch", "ONNX", "React", "Time-series"]
 github = "https://github.com/skang10/battery-sense"
 
 [[projects]]
-name = "P2J Daybook"
-description = "A local-first desktop daybook that turns daily check-ins into monthly progress."
+name = "Polaris"
+icon = "star"
+description = "A local check-in app for tracking a few goals: the goals are the star, the daily check-ins are the climb toward it."
 chips = ["Rust", "Tauri 2", "Local-first"]
-github = "https://github.com/skang10/p2j"
+github = "https://github.com/skang10/polaris"
